@@ -1,4 +1,4 @@
-.App {
-  padding-left: 15px;
-  color: black;
+a {
+  text-decoration: none !important;
+  color: inherit !important;
 }

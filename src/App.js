@@ -1,12 +1,25 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Cart from './Pages/Cart';
+import Home from './Pages/Home';
 import './styles.css';
-import explorer from './data/folderData';
-import Folder from "./components/Folder"
 
 function App() {
   return (
-      <div className="App">
-        <Folder explorer={explorer} />
-      </div>     
+      <BrowserRouter>
+        <Header />
+        <div>
+          <Routes>
+            <Route path='/' exact>
+              <Home />
+            </Route>
+            <Route path='/cart'>
+              <Cart />
+            </Route>
+          </Routes>
+         
+        </div>
+      </BrowserRouter>     
   );
 }
 
