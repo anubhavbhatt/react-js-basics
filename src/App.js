@@ -10,12 +10,8 @@ function App() {
         <Header />
         <div>
           <Routes>
-            <Route path='/' exact>
-              <Home />
-            </Route>
-            <Route path='/cart'>
-              <Cart />
-            </Route>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/cart' element={<Cart />} />
           </Routes>
          
         </div>
